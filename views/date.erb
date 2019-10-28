@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+    <h1>Today</h1>
+    <%= fullDayTime = Time.now.strftime('%A %D %B %Y').split %>
+    <%= day = fullDayTime[0] %>
+    <%= dayNum = fullDayTime[1].split('/')[1] %>
+    <%= month = fullDayTime[2] %>
+    <%= year = fullDayTime[3] %>
+
+    <p>The date is <%= day %>, <%= month %> <%= dayNum %>, <%= year %> </p>
+    </body>
+</html>
