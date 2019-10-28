@@ -1,0 +1,13 @@
+<% require 'date' %>
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Today</h1>
+        <% date_today = DateTime.now %>
+        <% week_day = date_today.strftime('%A')%>
+        <% month = date_today.strftime('%B')%>
+        <% month_day = date_today.strftime('%d')%>
+        <% year = date_today.strftime('%Y')%>
+        <p>The date is <%= week_day%>, <%= month%> <%= month_day%>, <%= year %></p>
+    </body>
+<html>
